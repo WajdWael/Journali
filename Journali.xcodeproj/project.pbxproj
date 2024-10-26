@@ -6,16 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8BD5AE482CCD794F00DD831F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8BD5AE442CCD794F00DD831F /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8BD5AE042CCD477500DD831F /* Journali.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journali.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD5AE442CCD794F00DD831F /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8BD5AE062CCD477500DD831F /* Journali */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			explicitFileTypes = {
-				README.md = net.daringfireball.markdown;
-			};
 			path = Journali;
 			sourceTree = "<group>";
 		};
@@ -36,6 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				8BD5AE062CCD477500DD831F /* Journali */,
+				8BD5AE442CCD794F00DD831F /* README.md */,
 				8BD5AE052CCD477500DD831F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD5AE482CCD794F00DD831F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
