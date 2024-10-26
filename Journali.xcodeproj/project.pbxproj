@@ -13,6 +13,9 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8BD5AE062CCD477500DD831F /* Journali */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {
+				README.md = net.daringfireball.markdown;
+			};
 			path = Journali;
 			sourceTree = "<group>";
 		};
