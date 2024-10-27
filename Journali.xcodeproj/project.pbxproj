@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		8BD5AE462CCD794F00DD831F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8BD5AE402CCD794F00DD831F /* .gitignore */; };
 		8BD5AE482CCD794F00DD831F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8BD5AE442CCD794F00DD831F /* README.md */; };
-		8BD5AE4C2CCD7A2D00DD831F /* Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD5AE4B2CCD7A2D00DD831F /* Cover.png */; };
+		8BD5AE632CCD875F00DD831F /* Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BD5AE622CCD875F00DD831F /* Cover.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8BD5AE042CCD477500DD831F /* Journali.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journali.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD5AE402CCD794F00DD831F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8BD5AE442CCD794F00DD831F /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8BD5AE4B2CCD7A2D00DD831F /* Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cover.png; sourceTree = "<group>"; };
+		8BD5AE622CCD875F00DD831F /* Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cover.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,7 +44,7 @@
 				8BD5AE062CCD477500DD831F /* Journali */,
 				8BD5AE442CCD794F00DD831F /* README.md */,
 				8BD5AE402CCD794F00DD831F /* .gitignore */,
-				8BD5AE4B2CCD7A2D00DD831F /* Cover.png */,
+				8BD5AE622CCD875F00DD831F /* Cover.png */,
 				8BD5AE052CCD477500DD831F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,7 +123,7 @@
 			files = (
 				8BD5AE462CCD794F00DD831F /* .gitignore in Resources */,
 				8BD5AE482CCD794F00DD831F /* README.md in Resources */,
-				8BD5AE4C2CCD7A2D00DD831F /* Cover.png in Resources */,
+				8BD5AE632CCD875F00DD831F /* Cover.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
