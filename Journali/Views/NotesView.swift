@@ -6,51 +6,78 @@
 //
 
 import SwiftUI
-struct ContentView: View {
+import SwiftData
+
+struct NotesView: View {
     @State private var searchText = ""
+    @Query private var notes: [NoteItemModel]
+    
+    @Environment(\.modelContext) var context
     @State private var showSheet = false
+    
+    @State private var selectedNote: NoteItemModel?
 
     var body: some View {
-        
         NavigationStack {
             
-            List {
-                Section {
-                    VStack {
-                        HStack {
-                            VStack {
-                                Text("Journali Title")
-                                    .foregroundStyle(Color("primaryColor"))
-                                    .font(.system(size: 24))
-                                    .fontWeight(.semibold)
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                
-                                Text("02/09/2024")
-                                    .padding(.top, -6)
-                                    .foregroundStyle(Color("Gray"))
-                                    .font(.system(size: 14))
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                            }
-                            Spacer()
-                            
-                            Button(action: {
-                                print("Set up alarm")
-                            }) {
-                                Image(systemName: "bookmark")
-                                    .font(.system(size: 24))
-                                    .foregroundStyle(Color("primaryColor"))
-                            }
-                        }
-                        Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.")
-                            .padding(.top, 26)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                    }
+            if notes.isEmpty {
+                VStack(spacing: 20) {
+                    Image("Journal")
                     
-                    .cornerRadius(14)
-                    .listRowSeparator(.hidden)
+                    Text("Begin Your Journal")
+                        .font(.system(size: 24, weight: .bold))
+                        .foregroundStyle(Color("primaryColor"))
+                    
+                    Text("Craft your personal diary, tap the \n plus icon to begin.")
+                        .font(.system(size: 18, weight: .light))
+                        .foregroundStyle(.white)
+                        .multilineTextAlignment(.center)
+                }
+                .navigationTitle("Journali")
+                .sheet(isPresented: $showSheet, content:{
+                    InputNote()
+                })
+            }
+            
+            List {
+                ForEach(notes) { note in
+                    Section {
+                        VStack() {
+                            HStack {
+                                VStack {
+                                    Text(note.journalTitle)
+                                        .foregroundStyle(Color("primaryColor"))
+                                        .font(.system(size: 24))
+                                        .fontWeight(.semibold)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                    
+                                    Text("\(note.timestamp, format: Date.FormatStyle(date: .numeric))")
+                                        .padding(.top, -6)
+                                        .foregroundStyle(Color("Gray"))
+                                        .font(.system(size: 14))
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                }
+                                Spacer()
+                                
+                                Button {
+                                    withAnimation {
+                                        note.isBookmarked.toggle()
+                                    }
+                                } label: {
+                                    Image(systemName: note.isBookmarked ? "bookmark.fill" : "bookmark")
+                                        .font(.system(size: 24))
+                                        .foregroundColor(Color("primaryColor"))
+                                }
+                            }
+                            Text(note.journalContent)
+                                .padding(.top, 26)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                        .cornerRadius(14)
+                        .listRowSeparator(.hidden)
+                    }
                     .swipeActions(edge: .leading) {
-                        Button {
-                            print("Edit button tapped")
+                        Button(role: .destructive) {
                         } label: {
                             Label("", systemImage: "pencil")
                         }
@@ -58,7 +85,14 @@ struct ContentView: View {
                     }
                     .swipeActions(edge: .trailing) {
                         Button(role: .destructive) {
-                            print("Delete button tapped")
+                            withAnimation {
+                                context.delete(note)
+                                do {
+                                    try context.save()
+                                } catch {
+                                    print("Failed to save context after deletion: \(error)")
+                                }
+                            }
                         } label: {
                             Label("", systemImage: "trash")
                         }
@@ -66,24 +100,7 @@ struct ContentView: View {
                     }
                 }
             }
-                        
-            //IF THERE IS NO NOTES
-            /*VStack(spacing: 20) {
-                Image("Journal")
-                
-                Text("Begin Your Journal")
-                    .font(.system(size: 24, weight: .bold))
-                    .foregroundStyle(Color("LightPurple"))
-                
-                Text("Craft your personal diary, tap the \n plus icon to begin.")
-                    .font(.system(size: 18, weight: .light))
-                    .foregroundStyle(.white)
-                    .multilineTextAlignment(.center)
-            }*/
-        
-            .navigationTitle("Journali")
             .padding(.top, 10)
-
             .toolbar {
                 ToolbarItem(){
                     HStack(spacing: 5) {
@@ -92,7 +109,7 @@ struct ContentView: View {
                         }){
                             Image(systemName: "plus")
                                 .padding()
-                                .background(Color("DarkGray"))
+                                .background(Color("darkGrayColor"))
                                 .foregroundStyle(Color("primaryColor"))
                                 .font(.system(size: 18))
                                 .frame(width: 35, height: 35)
@@ -109,7 +126,7 @@ struct ContentView: View {
                         } label: {
                             Image(systemName: "line.3.horizontal.decrease")
                                 .padding()
-                                .background(Color("DarkGray"))
+                                .background(Color("darkGrayColor"))
                                 .foregroundStyle(Color("primaryColor"))
                                 .font(.system(size: 18))
                                 .frame(width: 35, height: 35)
@@ -118,18 +135,16 @@ struct ContentView: View {
                     }
                 }
             }
-        }
-        .padding(.top)
-        
-        // add functiontily to hide it when there are no notes
-        .searchable(text: $searchText, prompt: "Search")
-        
-        .sheet(isPresented: $showSheet) {
-            InputNote()
+            .sheet(isPresented: $showSheet, content: {
+                InputNote()
+            })
+            .navigationTitle("Journali")
+            .searchable(text: $searchText, prompt: "Search")
         }
     }
 }
 
 #Preview {
-    ContentView()
+    NotesView()
 }
+
