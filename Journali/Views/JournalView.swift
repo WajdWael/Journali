@@ -26,11 +26,13 @@ struct JournalView: View {
                     }
                     .padding(.top, 10)
                     .searchable(text: $viewModel.searchText, prompt: "Search")
+                    .padding(.horizontal, 0)
                 }
             }
+            
             .toolbar {
                 ToolbarItem {
-                    HStack(spacing: 5) {
+                    HStack(spacing: 3) {
                         Button(action: {
                             viewModel.showSheet.toggle()
                         }) {
@@ -66,11 +68,14 @@ struct JournalView: View {
                     }
                 }
             }
+            
             .sheet(isPresented: $viewModel.showSheet, content: {
-                JournalFormView()
+                JournalSheetView()
             })
             .navigationTitle("Journali")
         }
+        .listRowInsets(EdgeInsets())
+        .padding(.top, 20)
     }
 }
 

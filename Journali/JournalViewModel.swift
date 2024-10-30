@@ -43,6 +43,7 @@ class JournalViewModel: ObservableObject {
             if !isEditing {
                 modelContext.insert(selectedJournal)
             }
+            
             try? modelContext.save()
             completion()
         }

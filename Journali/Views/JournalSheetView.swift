@@ -8,7 +8,7 @@ import SwiftUI
 import SwiftData
 
 
-struct JournalFormView: View {
+struct JournalSheetView: View {
     @Environment(\.dismiss) var dismiss
     @Environment(\.modelContext) var context
     @StateObject private var viewModel: JournalViewModel
@@ -34,11 +34,13 @@ struct JournalFormView: View {
                         dismiss()
                     }
                 }) {
-                    Text(viewModel.isEditing ? "Edit" : "Save")
+                    Text("Save")
                         .font(.system(size: 16))
                         .fontWeight(.bold)
-                        .foregroundColor(Color("buttonTextAccent"))
+                        .foregroundColor(Color("secondaryColor"))
                 }
+                
+                
                 .alert(isPresented: $viewModel.showAlert) {
                     Alert(
                         title: Text("Please, Try again!"),
@@ -82,6 +84,6 @@ struct JournalFormView: View {
 }
 
 #Preview {
-    JournalFormView()
+    JournalSheetView()
         .modelContainer(for: JournalModel.self)
 }

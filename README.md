@@ -1,7 +1,7 @@
 # Journali
 ## Your thoughts, your story
 
-!["cover image shows the app."](Cover.png)
+!["cover image shows the app."](/readmePics/Cover.png)
 
 ---
 # Tools

@@ -43,12 +43,14 @@ struct JournalListView: View {
                     }
                 }
                 Text(journal.journalContent)
-                    .padding(.top, 26)
+                    .padding(.top, 16)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .cornerRadius(14)
+            .padding(.horizontal, 0)
+            .cornerRadius(20)
             .listRowSeparator(.hidden)
         }
+        .listSectionSpacing(16)
         .swipeActions(edge: .leading) {
             Button(role: .destructive) {
                 viewModel.selectedJournal = journal
@@ -69,7 +71,7 @@ struct JournalListView: View {
             .tint(Color("red"))
         }
         .sheet(isPresented: $viewModel.showSheet, content: {
-            JournalFormView(journal: journal)
+            JournalSheetView(journal: journal)
         })
     }
 }
