@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class NoteItemModel:Identifiable {
+final class JournalModel:Identifiable {
     var journalTitle: String
     var journalContent: String
     var timestamp: Date

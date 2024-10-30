@@ -8,12 +8,13 @@
 import SwiftUI
 import SwiftData
 
+
 @main
 struct JournaliApp: App {
     var body: some Scene {
         WindowGroup {
-            NotesView()
-                .modelContainer(for: NoteItemModel.self)
+            JournalView()
+                .modelContainer(for: JournalModel.self)
         }
     }
 }
