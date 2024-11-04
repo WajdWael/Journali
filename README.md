@@ -1,5 +1,4 @@
 # Journali
-=100x20
 <!--!["cover image shows the app."]("readmePics/Cover.png")-->
 <img src="readmePics/Cover.png"/>
 Your thoughts, your story
