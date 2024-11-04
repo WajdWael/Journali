@@ -1,5 +1,5 @@
 # Journali
-!["cover image shows the app."](Cover.png)
+!["cover image shows the app."]("Cover.png")
 Your thoughts, your story
 
 ## Usage  🔭
@@ -13,14 +13,14 @@ Your personal digital diary. Easily write, organize, and reflect on your thought
 
 ## Featuers 
 ### Meet journali app:
-![splash view](splash.png)
+![splash view]("splash.png")
 
-1. ![create view](NewJournalUI.png) Creating a new journal entry, to write your thoughts and experiences.
-2. ![edit view](EditJournalUI.png) Editing an existing journal entry, to update or correct your thoughts.
-3. ![edit view](Main.png) Deleting a journal entry, to remove entries that you no longer want to keep.
-4. ![edit view](search.png) Searching for specific words or phrases, to quickly find relevant thoughts or memories.
-5. ![edit view](Main.png) Bookmarking specific journal entries, to easily find your favorite or important entries later.
-6. ![edit view](Filter) Filtering journal entries, to view those that are bookmarked to access your most important notes.
+1. ![create view]("NewJournalUI.png") Creating a new journal entry, to write your thoughts and experiences.
+2. ![edit view]("EditJournalUI.png") Editing an existing journal entry, to update or correct your thoughts.
+3. ![Main journal view]("Main.png") Deleting a journal entry, to remove entries that you no longer want to keep.
+4. ![Search featuer view]("search.png") Searching for specific words or phrases, to quickly find relevant thoughts or memories.
+5. ![Bookmarking view]("Main.png") Bookmarking specific journal entries, to easily find your favorite or important entries later.
+6. ![Filter view]("Filter.png") Filtering journal entries, to view those that are bookmarked to access your most important notes.
 
 
 # Discover the technologies 🔦  
