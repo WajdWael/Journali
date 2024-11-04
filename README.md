@@ -18,17 +18,17 @@ Your personal digital diary. Easily write, organize, and reflect on your thought
 
 # Feature Overview
 
-| Feature       | Description and Screenshot                             |
-|---------------|--------------------------------------------------------|
-| Main View     | Creating a new journal entry, to write your thoughts and experiences. <img src="readmePics/NewJournalUI.png" width="393" height="852"/> |
-| Edit Journal  | Editing an existing journal entry, to update or correct your thoughts. <img src="readmePics/EditJournalUI.png" width="393" height="852"/> |
-| Delete Journal | Deleting a journal entry, to remove entries that you no longer want to keep. <img src="readmePics/Main.png" width="393" height="852"/> |
-| Searching      | Searching for specific words or phrases, to quickly find relevant thoughts or memories. <img src="readmePics/search.png" width="393" height="852"/> |
-| Bookmarking   | Bookmarking specific journal entries, to easily find your favorite or important entries later. <img src="readmePics/Main.png" width="393" height="852"/> |
-| Filtering        | Filtering journal entries, to view those that are bookmarked to access your most important notes. <img src="readmePics/Filter.png" width="393" height="852"/> |
+| Feature       | Description                                         | Screenshot                                            |
+|---------------|-----------------------------------------------------|-------------------------------------------------------|
+| Main View     | Creating a new journal entry, to write your thoughts and experiences. | <img src="readmePics/NewJournalUI.png" width="150" height="325"/> |
+| Edit Journal  | Editing an existing journal entry, to update or correct your thoughts. | <img src="readmePics/EditJournalUI.png" width="150" height="325"/> |
+| Delete Journal| Deleting a journal entry, to remove entries that you no longer want to keep. | <img src="readmePics/Main.png" width="150" height="325"/> |
+| Searching     | Searching for specific words or phrases, to quickly find relevant thoughts or memories. | <img src="readmePics/search.png" width="150" height="325"/> |
+| Bookmarking   | Bookmarking specific journal entries, to easily find your favorite or important entries later. | <img src="readmePics/Main.png" width="150" height="325"/> |
+| Filtering     | Filtering journal entries, to view those that are bookmarked to access your most important notes. | <img src="readmePics/Filter.png" width="150" height="325"/> |
 
 
-<img src="readmePics/splash.png" width="393" height="852"/>
+<!-- <img src="readmePics/splash.png" width="393" height="852"/> -->
 
 <!-- 1. <img src="readmePics/NewJournalUI.png" width="393" height="852"/> Creating a new journal entry, to write your thoughts and experiences. -->
 <!--  2. <img src="readmePics/EditJournalUI.png" width="393" height="852"/> Editing an existing journal entry, to update or correct your thoughts.
