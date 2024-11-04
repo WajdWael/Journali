@@ -47,7 +47,6 @@ struct JournalListView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
             .padding(.horizontal, 0)
-            .cornerRadius(20)
             .listRowSeparator(.hidden)
         }
         .listSectionSpacing(16)

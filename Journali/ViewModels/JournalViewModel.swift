@@ -16,7 +16,7 @@ class JournalViewModel: ObservableObject {
     @Published var selectedJournal = JournalModel()
     @Published var isEditing: Bool
     @Published var filterOption: FilterOption = .all
-    
+    @Published var initialJournal: JournalModel?
 
     func formatDate(_ date: Date) -> String {
         return date.formatted(Date.FormatStyle(date: .numeric))
@@ -34,9 +34,12 @@ class JournalViewModel: ObservableObject {
     init(journal: JournalModel? = nil) {
         self.selectedJournal = journal ?? JournalModel()
         self.isEditing = journal != nil
+        if isEditing {
+            initialJournal = JournalModel(journalTitle: selectedJournal.journalTitle, journalContent: selectedJournal.journalContent)
+        }
     }
     
-    func createEditJournal(modelContext: ModelContext, completion: () -> Void) {
+    func createEditJournal(modelContext: ModelContext, dismiss: DismissAction) {
         if selectedJournal.journalTitle.isEmpty || selectedJournal.journalContent.isEmpty {
             showAlert = true
         } else {
@@ -45,8 +48,18 @@ class JournalViewModel: ObservableObject {
             }
             
             try? modelContext.save()
-            completion()
+            dismiss()
         }
+    }
+    
+    func cancelEditing(dismiss: DismissAction) {
+        if isEditing {
+            if let initialJournal = initialJournal {
+                selectedJournal.journalContent = initialJournal.journalContent
+                selectedJournal.journalTitle = initialJournal.journalTitle
+            }
+        }
+        dismiss()
     }
     
     enum FilterOption {

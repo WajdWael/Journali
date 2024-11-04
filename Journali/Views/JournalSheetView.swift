@@ -1,9 +1,10 @@
 //
-//  JournalFormView.swift
+//  JournalSheetView.swift
 //  Journali
 //
 //  Created by Wajd Wael on 26/04/1446 AH.
 //
+
 import SwiftUI
 import SwiftData
 
@@ -21,18 +22,15 @@ struct JournalSheetView: View {
     var body: some View {
         VStack(spacing: 10) {
             HStack {
-                
                 Button("Cancel") {
-                    dismiss()
+                    viewModel.cancelEditing(dismiss: dismiss)
                 }
                 .font(.system(size: 16))
                 .fontWeight(.light)
                 .foregroundColor(Color("buttonTextAccent"))
                 Spacer()
                 Button(action: {
-                    viewModel.createEditJournal(modelContext: context) {
-                        dismiss()
-                    }
+                    viewModel.createEditJournal(modelContext: context, dismiss: dismiss)
                 }) {
                     Text("Save")
                         .font(.system(size: 16))
