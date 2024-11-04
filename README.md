@@ -1,5 +1,5 @@
 # Journali
-!["cover image shows the app."]("readmePics/Cover.png")
+!["cover image shows the app."](readmePics/Cover.png)
 Your thoughts, your story
 
 ## Usage  🔭
