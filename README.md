@@ -1,7 +1,7 @@
 # Journali
 =100x20
 <!--!["cover image shows the app."]("readmePics/Cover.png")-->
-<img src="readmePics/Cover.png" width="393" height="852"/>
+<img src="readmePics/Cover.png"/>
 Your thoughts, your story
 
 ## Usage  🔭
@@ -15,14 +15,27 @@ Your personal digital diary. Easily write, organize, and reflect on your thought
 
 ## Featuers 
 ### Meet journali app:
+
+# Feature Overview
+
+| Feature       | Description and Screenshot                             |
+|---------------|--------------------------------------------------------|
+| Main View     | Creating a new journal entry, to write your thoughts and experiences. <img src="readmePics/NewJournalUI.png" width="393" height="852"/> |
+| Edit Journal  | Editing an existing journal entry, to update or correct your thoughts. <img src="readmePics/EditJournalUI.png" width="393" height="852"/> |
+| Delete Journal | Deleting a journal entry, to remove entries that you no longer want to keep. <img src="readmePics/Main.png" width="393" height="852"/> |
+| Searching      | Searching for specific words or phrases, to quickly find relevant thoughts or memories. <img src="readmePics/search.png" width="393" height="852"/> |
+| Bookmarking   | Bookmarking specific journal entries, to easily find your favorite or important entries later. <img src="readmePics/Main.png" width="393" height="852"/> |
+| Filtering        | Filtering journal entries, to view those that are bookmarked to access your most important notes. <img src="readmePics/Filter.png" width="393" height="852"/> |
+
+
 <img src="readmePics/splash.png" width="393" height="852"/>
 
-1. <img src="readmePics/NewJournalUI.png" width="393" height="852"/> Creating a new journal entry, to write your thoughts and experiences.
-2. <img src="readmePics/EditJournalUI.png" width="393" height="852"/> Editing an existing journal entry, to update or correct your thoughts.
+<!-- 1. <img src="readmePics/NewJournalUI.png" width="393" height="852"/> Creating a new journal entry, to write your thoughts and experiences. -->
+<!--  2. <img src="readmePics/EditJournalUI.png" width="393" height="852"/> Editing an existing journal entry, to update or correct your thoughts.
 3. <img src="readmePics/Main.png" width="393" height="852"/> Deleting a journal entry, to remove entries that you no longer want to keep.
 4. <img src="readmePics/search.png" width="393" height="852"/> Searching for specific words or phrases, to quickly find relevant thoughts or memories.
 5. <img src="readmePics/Main.png" width="393" height="852"/> Bookmarking specific journal entries, to easily find your favorite or important entries later.
-6. <img src="readmePics/Filter.png" width="393" height="852"/> Filtering journal entries, to view those that are bookmarked to access your most important notes.
+6. <img src="readmePics/Filter.png" width="393" height="852"/> Filtering journal entries, to view those that are bookmarked to access your most important notes. -->
 
 
 # Discover the technologies 🔦  
