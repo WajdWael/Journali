@@ -1,5 +1,7 @@
 # Journali
-!["cover image shows the app."](readmePics/Cover.png)
+=100x20
+<!--!["cover image shows the app."]("readmePics/Cover.png")-->
+<img src="readmePics/Cover.png" width="393" height="852"/>
 Your thoughts, your story
 
 ## Usage  🔭
@@ -13,14 +15,14 @@ Your personal digital diary. Easily write, organize, and reflect on your thought
 
 ## Featuers 
 ### Meet journali app:
-![splash view](readmePics/splash.png)
+<img src="readmePics/splash.png" width="393" height="852"/>
 
-1. ![create view](readmePics/NewJournalUI.png) Creating a new journal entry, to write your thoughts and experiences.
-2. ![edit view](readmePics/EditJournalUI.png) Editing an existing journal entry, to update or correct your thoughts.
-3. ![Main journal view](readmePics/Main.png) Deleting a journal entry, to remove entries that you no longer want to keep.
-4. ![Search featuer view](readmePics/search.png) Searching for specific words or phrases, to quickly find relevant thoughts or memories.
-5. ![Bookmarking view](readmePics/Main.png) Bookmarking specific journal entries, to easily find your favorite or important entries later.
-6. ![Filter view](readmePics/Filter.png) Filtering journal entries, to view those that are bookmarked to access your most important notes.
+1. <img src="readmePics/NewJournalUI.png" width="393" height="852"/> Creating a new journal entry, to write your thoughts and experiences.
+2. <img src="readmePics/EditJournalUI.png" width="393" height="852"/> Editing an existing journal entry, to update or correct your thoughts.
+3. <img src="readmePics/Main.png" width="393" height="852"/> Deleting a journal entry, to remove entries that you no longer want to keep.
+4. <img src="readmePics/search.png" width="393" height="852"/> Searching for specific words or phrases, to quickly find relevant thoughts or memories.
+5. <img src="readmePics/Main.png" width="393" height="852"/> Bookmarking specific journal entries, to easily find your favorite or important entries later.
+6. <img src="readmePics/Filter.png" width="393" height="852"/> Filtering journal entries, to view those that are bookmarked to access your most important notes.
 
 
 # Discover the technologies 🔦  
@@ -37,14 +39,9 @@ SwiftData is a powerful and expressive persistence framework built for Swift. It
 @Query private var journals: [JournalModel]
 ```
 
-
 ```Swift 
 @Environment(\.modelContext) var modelContext
 ```
-
-
-
-
 
 ```Swift 
 @StateObject private var viewModel = JournalViewModel()
