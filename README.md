@@ -46,7 +46,7 @@ SwiftData is a powerful and expressive persistence framework built for Swift. It
 
 
 ### See SwiftData in this project
-- Featche the whole list of journals and show them in the main contentView.
+<!-- - Featche the whole list of journals and show them in the main contentView. -->
 ```Swift 
 @Query private var journals: [JournalModel]
 ```
@@ -55,6 +55,7 @@ SwiftData is a powerful and expressive persistence framework built for Swift. It
 @Environment(\.modelContext) var modelContext
 ```
 
+### These tow couple of lines of code are like a magic to adjusting MVVM
 ```Swift 
 @StateObject private var viewModel = JournalViewModel()
 ```
