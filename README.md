@@ -7,13 +7,12 @@ Your thoughts, your story
 
 ## Table of Contents
 
-1. [Usage 🔭](#usage-🔭)
-2. [Tools ⚒️](#tools-⚒️)
-3. [Features ✨](#features-✨)
-4. [Discover the Technologies 🔦](#discover-the-technologies-🔦)
-   - [MVVM 🧨](#mvvm-🧨)
-   - [Why Use SwiftData 📊](#why-use-swiftdata-📊)
-5. [SwiftData in Action](#swiftdata-in-action)
+1. [Usage 🔭]([#usage-🔭](https://github.com/WajdWael/Journali?tab=readme-ov-file#usage--)
+2. [Tools ⚒️](https://github.com/WajdWael/Journali?tab=readme-ov-file#tools-%EF%B8%8F)
+3. [Features ✨]([#features-✨](https://github.com/WajdWael/Journali?tab=readme-ov-file#featuers-)
+4. [Discover the Technologies 🔦](https://github.com/WajdWael/Journali?tab=readme-ov-file#discover-the-technologies-)
+   - [MVVM 🧨](https://github.com/WajdWael/Journali?tab=readme-ov-file#mvvm-)
+   - [Why Use SwiftData 📊](https://github.com/WajdWael/Journali?tab=readme-ov-file#why-to-use-swiftdata-)
 
 ---
 ## Usage  🔭
