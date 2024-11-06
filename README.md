@@ -3,7 +3,19 @@ Your thoughts, your story
 <!--!["cover image shows the app."]("readmePics/Cover.png")-->
 <img src="readmePics/Cover.png"/>
 
+---
 
+## Table of Contents
+
+1. [Usage 🔭](#usage-🔭)
+2. [Tools ⚒️](#tools-⚒️)
+3. [Features ✨](#features-✨)
+4. [Discover the Technologies 🔦](#discover-the-technologies-🔦)
+   - [MVVM 🧨](#mvvm-🧨)
+   - [Why Use SwiftData 📊](#why-use-swiftdata-📊)
+5. [SwiftData in Action](#swiftdata-in-action)
+
+---
 ## Usage  🔭
 Your personal digital diary. Easily write, organize, and reflect on your thoughts, experiences, and feelings in a private and secure space.
 
