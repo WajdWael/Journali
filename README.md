@@ -7,9 +7,9 @@ Your thoughts, your story
 
 ## Table of Contents
 
-1. [Usage 🔭]([#usage-🔭](https://github.com/WajdWael/Journali?tab=readme-ov-file#usage--)
+1. [Usage 🔭](https://github.com/WajdWael/Journali?tab=readme-ov-file#usage--)
 2. [Tools ⚒️](https://github.com/WajdWael/Journali?tab=readme-ov-file#tools-%EF%B8%8F)
-3. [Features ✨]([#features-✨](https://github.com/WajdWael/Journali?tab=readme-ov-file#featuers-)
+3. [Features ✨](https://github.com/WajdWael/Journali?tab=readme-ov-file#featuers-)
 4. [Discover the Technologies 🔦](https://github.com/WajdWael/Journali?tab=readme-ov-file#discover-the-technologies-)
    - [MVVM 🧨](https://github.com/WajdWael/Journali?tab=readme-ov-file#mvvm-)
    - [Why Use SwiftData 📊](https://github.com/WajdWael/Journali?tab=readme-ov-file#why-to-use-swiftdata-)
